@@ -1,0 +1,17 @@
+Package: compIndTools
+Type: Package
+Title: Tools for computing and validating composite indicators across multiple years
+Version: 0.1.0
+Author: Marina Ferent-Pipas
+Maintainer: Marina Ferent-Pipas <marinaferent@gmail.com>
+Description: The package contains functions that create composite indicators for multiple years returning scores and ranks for each statistical unit. It contains a function that eases the preprocessing stage by rescaling columns using min-max normalization, z-scoring, or ranking. 
+    The functions compute scores and ranks for inclusion/exclusion of basic variables as part of the uncertainity analysis.
+    To display uncertainity analysis, the package offers functions that (1) count the number (percent) of times a statistical unit takes a given rank; (2) provide a table with the initial rank, average and median rank taken accross simulations;
+    (3) export .xlsx tables with the frequencies of each rank color coded for initial, median and modal rank; (4) compute the average shift in ranking (total, per year, and per country and year);
+    (5) create boxplots of ranks taken in different simulations (and stores them in .png files).
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.3
+Depends: 
+    R (>= 2.10)
