@@ -360,10 +360,6 @@ names(ranks2001_2003)
 boxplotRanks(ranks2001_2003)
 ```
 
-    ## Loading required package: gsubfn
-
-    ## Loading required package: proto
-
 ![](README_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-9-2.png)<!-- -->![](README_files/figure-gfm/unnamed-chunk-9-3.png)<!-- -->
 
 If we want to use country codes instead, we could:
