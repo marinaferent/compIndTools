@@ -80,8 +80,13 @@ Total shift in ranking per country in each year ($RsCountry). Please read countr
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">ranksInitial2001_2003</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>,<span class="fl">27</span><span class="op">:</span><span class="fl">32</span><span class="op">)</span>,<span class="fl">1</span><span class="op">:</span><span class="fl">5</span><span class="op">]</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in `[.data.frame`(ranksInitial2001_2003, c(1:5, 27:32), 1:5):</span> undefined columns selected</span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">ranksInitial2001_2003</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>,<span class="op">]</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          Country X2001 X2002 X2003</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1        Belgium    14    14    14</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2       Bulgaria     8     9     9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 Czech Republic     5     6     6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4        Denmark    25    25    24</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5        Germany    13    11    12</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">ranksNb2001_2003</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "ranksNb2001" "ranksNb2002" "ranksNb2003"</span>
 <span class="r-in"><span><span class="va">a</span><span class="op">=</span><span class="fu">rankShift_avg</span><span class="op">(</span><span class="va">ranksInitial2001_2003</span>, <span class="va">ranksNb2001_2003</span><span class="op">)</span></span></span>
